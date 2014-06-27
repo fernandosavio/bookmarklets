@@ -25,19 +25,25 @@ javascript:(function(){
                 fs_input.id = fs_id + "-input";
                 fs_input.type = "text";
                 fs_input.placeholder = "Let me google that for you...";
-                fs_input.setAttribute("style", "font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; font-weight: 300; margin: 0; width: 90%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; height: 30px; outline: 0; border: 0; -webkit-appearance: none; float: left;");
+                fs_input.setAttribute("style", "font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; font-weight: 300; font-size: 16px; margin: 0; width: 90%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; height: 30px; outline: 0; border: 0; -webkit-appearance: none; float: left;");
                 fs.appendChild(fs_input);
 
                 span = document.createElement("span");
-                span.setAttribute("style", "float: left; padding: 7px 0; color: #888;");
+                span.setAttribute("style", "font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; font-weight: 300; font-size: 16px; float: left; padding: 7px 0; color: #888;");
                 span.innerHTML = "Press [Enter]";
                 fs.appendChild(span);
 
-                fs_input.addEventListener("keypress", function(event){
-                    if(event.key || event.keyIdentifier === "Enter"){
+                fs_input.addEventListener("keyup", function(event){
+                    var key = event.keyCode || event.which;
+
+                    if(key === 13){
                         this.value = "http://lmgtfy.com/?q=" + encodeURIComponent(this.value);
                         this.focus();
                         this.setSelectionRange(0, this.value.length);
+                    }
+                    else if(key === 27){
+                        document.body.removeChild(fs);
+                        document.body.removeChild(fs_bg);
                     }
                 });
             }
@@ -51,5 +57,6 @@ javascript:(function(){
     docfrag.appendChild(create_fs());
 
     docfrag && document.body.appendChild(docfrag);
+    fs_input.focus();
 
 })();void(0);
