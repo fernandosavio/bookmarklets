@@ -33,7 +33,7 @@ Let Me Google That For You - http://lmgtfy.com/
 * Opera: 8+
 * Safari: 3+
 
-
+---
 
 - | Internet Explorer | Google Chrome | Mozilla Firefox | Opera | Safari
 ------------ | ------------- | ------------- | ------------- | ------------- | ------------- 
