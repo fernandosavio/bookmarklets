@@ -3,7 +3,17 @@
 It's a bookmarklet that shows a modal that generates a LMGTFY URL for you.
 
 <kbd>Enter</kbd> to generate the URL.
+
 <kbd>Esc</kbd> or click anywhere out the modal to close.
+
+---
+
+### Installing
+
+* Create a bookmark in your browser
+* Name it
+* Copy and paste the content of [lmgtfy.min.js](https://raw.githubusercontent.com/fernandosavio/bookmarklets/master/lmgtfy.com/lmgtfy.min.js) file to URL field of bookmark.
+
 
 ---
 
