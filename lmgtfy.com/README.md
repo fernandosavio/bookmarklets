@@ -27,9 +27,8 @@ Let Me Google That For You - http://lmgtfy.com/
 
 ### Compatibility:
 
-* Internet Explorer: 9+
-* Mozilla Firefox: 1.7+
-* Google Chrome: 1+
-* Opera: 8+
-* Safari: 3+
+- | Internet Explorer | Google Chrome | Mozilla Firefox | Opera | Safari
+------------ | ------------- | ------------- | ------------- | ------------- | ------------- 
+[Element.addEventListener](https://developer.mozilla.org/pt-BR/docs/Web/API/Element.addEventListener#Browser_Compatibility) | 9 | 1 | 1 | 7 | 1
+[HTMLInputElement.setSelectionRange](https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement.setSelectionRange#Browser_compatibility) | 9 | 1 | 1.7 | 8 | 3
 
