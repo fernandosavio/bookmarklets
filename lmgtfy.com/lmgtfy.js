@@ -29,7 +29,7 @@ javascript:(function(){
                 fs.appendChild(fs_input);
 
                 span = document.createElement("span");
-                span.setAttribute("style", "font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; font-weight: 300; font-size: 16px; float: left; padding: 7px 0; color: #888;");
+                span.setAttribute("style", "font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; font-weight: 300; font-size: 16px; padding: 7px 0; color: #888; position: absolute; right 8px;");
                 span.innerHTML = "Press [Enter]";
                 fs.appendChild(span);
 
