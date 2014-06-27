@@ -17,6 +17,8 @@ It's a bookmarklet that shows a modal that generates a LMGTFY URL for you.
 
 ---
 
+### References
+
 Modal style from [Foundation - Reveal Modal](http://foundation.zurb.com/docs/components/reveal.html).
 
 Let Me Google That For You - http://lmgtfy.com/
