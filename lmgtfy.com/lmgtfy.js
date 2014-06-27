@@ -25,8 +25,13 @@ javascript:(function(){
                 fs_input.id = fs_id + "-input";
                 fs_input.type = "text";
                 fs_input.placeholder = "Let me google that for you...";
-                fs_input.setAttribute("style", "margin: 0; width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; height: 30px; outline: 0; border: 0; -webkit-appearance: none;");
+                fs_input.setAttribute("style", "margin: 0; width: 90%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; height: 30px; outline: 0; border: 0; -webkit-appearance: none; float: left;");
                 fs.appendChild(fs_input);
+
+                span = document.createElement("span");
+                span.setAttribute("style", "float: left; padding: 7px 0; color: #888;");
+                span.innerHTML = "Press [Enter]";
+                fs.appendChild(span);
 
                 fs_input.addEventListener("keypress", function(event){
                     if(event.key || event.keyIdentifier === "Enter"){
