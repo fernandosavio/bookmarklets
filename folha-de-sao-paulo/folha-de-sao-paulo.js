@@ -15,6 +15,8 @@ javascript:(function(){
 
     // Permite a cópia do conteúdo
     $("body").off("copy cut paste");
-
+    
+    // Retira o popup de compartilhamento ao selecionar texto
+    $("#news").off("mouseup");
 
 })();void(0);
